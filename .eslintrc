@@ -1,7 +1,6 @@
 {
   "rules": {
       "semi": 2,
-      "vars-on-top": 2,
       "space-after-keywords": 2,
       "quotes": [2, "single", "avoid-escape"],
       "valid-jsdoc": [2, {"prefer": {"return": "returns"}}]

@@ -4,15 +4,20 @@
   "description": "require jsdoc eslint plugin",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node Makefile.js test"
   },
   "peerDependencies": {
-      "eslint": ">=0.8.0"
-  }
+    "eslint": ">=0.8.0"
+  },
   "keywords": [
     "eslint",
     "eslint-plugin"
   ],
   "author": "Ratheesh Naithalath",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "istanbul": "~0.3.13",
+    "shelljs": "^0.3.0",
+    "mocha": "~2.2.4"
+  }
 }
