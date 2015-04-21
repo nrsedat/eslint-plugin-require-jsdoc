@@ -9,7 +9,8 @@ eslintTester.addRuleTest('./lib/rules/require-jsdoc', {
         '/*@return*/function doSomething() {return 1+2;}',
         '/*@param @return*/function doSomething(string) {return string;}',
         '/*@param @return*/var test = function(string){console.log("test");}',
-        'var comp = React.createClass({/*@return*/render: function(){}});'
+        'var comp = React.createClass({/*@return*/render: function(){}});',
+        'module.exports = function(){return true};'
     ],
 
     invalid: [
