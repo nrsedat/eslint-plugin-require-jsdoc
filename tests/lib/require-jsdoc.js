@@ -27,11 +27,11 @@ eslintTester.addRuleTest('./lib/rules/require-jsdoc', {
         },
         {
             code: '/*@return*/function doSomething(string) {return string}',
-            errors: [ { message: 'Missing @param definitions' } ]
+            errors: [ { message: 'Missing @param description in the jsdoc for doSomething' } ]
         },
         {
             code: '/*@param*/function doSomething(string) {return string}',
-            errors: [ { message: 'Missing @return statement in jsdoc' } ]
+            errors: [ { message: 'Missing @return description in the jsdoc for doSomething' } ]
         },
         {
             code: 'var test = function(){console.log("test");}',
@@ -43,19 +43,19 @@ eslintTester.addRuleTest('./lib/rules/require-jsdoc', {
         },
         {
             code: '/*@return*/var test = function(string){console.log(string);}',
-            errors: [ { message: 'Missing @param definitions' } ]
+            errors: [ { message: 'Missing @param description in the jsdoc for test' } ]
         },
         {
             code: '/*@param*/var test = function(string){console.log(string);}',
-            errors: [ { message: 'Missing @return statement' } ]
+            errors: [ { message: 'Missing @return description in the jsdoc for test' } ]
         },
         {
             code: '/*@param*/var test = function(string,string2){console.log(string);}',
-            errors: [ {message: 'Missing @return statement'}, { message: 'Missing @param definitions' } ]
+            errors: [ {message: 'Missing @return description in the jsdoc for test'}, { message: 'Missing @param description in the jsdoc for test' } ]
         },
         {
             code: '/*@param@return*/var test = function(var1, var2){console.log(string);}',
-            errors: [ { message: 'Missing @param definitions' } ]
+            errors: [ { message: 'Missing @param description in the jsdoc for test' } ]
         },
         {
             code: 'var comp = React.createClass({render: function(){}});',
