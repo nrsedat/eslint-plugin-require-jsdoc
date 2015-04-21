@@ -11,8 +11,13 @@
   },
   "keywords": [
     "eslint",
-    "eslint-plugin"
+    "eslint-plugin",
+    "eslintplugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nrsedat/eslint-plugin-require-jsdoc"
+  },
   "author": "Ratheesh Naithalath",
   "license": "ISC",
   "devDependencies": {
