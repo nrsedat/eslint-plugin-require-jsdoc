@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-require-jsdoc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "require jsdoc eslint plugin",
   "main": "index.js",
   "scripts": {
