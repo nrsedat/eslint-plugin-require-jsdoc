@@ -12,7 +12,7 @@ eg:
     "require-jsdoc"   
   ],
   "rules": {   
-    "require-jsdoc": 2,  
+    "require-jsdoc/require-jsdoc": 2,  
     "valid-jsdoc": 2   
   }   
 ```  
